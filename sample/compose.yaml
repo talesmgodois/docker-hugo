@@ -1,0 +1,12 @@
+services:
+  mgodois:
+    build: 
+      context: .
+      args:
+        HUGO_VERSION: 0.145
+    ports:
+      - "81:80"
+    environment:
+      HUGO_BASEURL: localhost:81
+      NGINX_PORT: 81
+
