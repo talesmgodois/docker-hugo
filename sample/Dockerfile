@@ -1,7 +1,7 @@
 # Stage 1: Build Hugo and your site
 FROM talesmgodois/hugo:latest
 
-COPY ./hugo-sample .
+COPY ./hugo-blog .
 
 # Build the Hugo site
 RUN hugo --gc --minify
